@@ -44,6 +44,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
+	// Fetching Post Details
 	const posts = await getPosts();
 
 	return {
